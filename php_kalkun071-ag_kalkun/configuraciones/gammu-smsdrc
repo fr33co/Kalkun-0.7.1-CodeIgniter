@@ -1,0 +1,29 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this!
+port = /dev/ttyUSB0
+#pin = 3525
+connection = at
+# Debugging
+#logformat = textall
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+service = MYSQL
+runonreceive = /var/www/kalkun_0.7.1/scripts/daemon.sh
+logfile = syslog
+# Increase for debugging information
+debuglevel = 0
+
+user = root
+password = 123456
+pc = localhost
+database = kalkun071
+
+# Paths where messages are stored
+#inboxpath = /var/spool/gammu/inbox/
+#outboxpath = /var/spool/gammu/outbox/
+#sentsmspath = /var/spool/gammu/sent/
+#errorsmspath = /var/spool/gammu/error/
