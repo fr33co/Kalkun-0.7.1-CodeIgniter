@@ -1,2 +1,2 @@
-myprojects_php
+Kalkun 0.7.1
 ==============
